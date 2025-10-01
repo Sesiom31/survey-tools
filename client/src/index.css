@@ -1,6 +1,8 @@
 @import 'tailwindcss';
+@import './styles/fonts.css';
 
 @theme {
   --color-main: #31363f;
   --color-dark: #222831;
+  --font-toroka: 'Toroka', sans-serif;
 }

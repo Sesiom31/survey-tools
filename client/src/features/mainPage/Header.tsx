@@ -3,32 +3,27 @@ import clsx from 'clsx';
 
 export const Header = () => {
   return (
-    <header className=" w-full h-14 bg-dark">
-      <div className="w-full h-full px-4  flex  items-center">
-        <div className=" h-full aspect-[4/1] py-3">
+    <header className={clsx(' w-full h-16 bg-dark', 'landscape:h-13')}>
+      <div className="w-full h-full px-3  flex  items-center justify-between">
+        <figure className={clsx(' h-full w-auto py-3', 'landscape:py-1')}>
           <LogoSurvey
-            className="w-full h-full font-semibold"
-            textColor="orange"
-            iconColor="cyan"
+            className="h-full  font-medium aspect[3/1] font-toroka"
+            textColor="#F8CB2E"
+            iconColor="#F8CB2E"
+            fontSizeText="2rem"
           />
-        </div>
-        <div className=" ml-4 w-auto h-full flex text-white">
+        </figure>
+
+        <div className=" w-auto h-full flex items-center justify-start text-white">
           <ul className="flex items-center w-auto h-full">
             <li
               className={clsx(
-                ' text-sm h-full w-24 p-2 flex justify-center items-center',
-                ' hover:bg-red-500'
+                ' text-sm h-full w-24 p-1 flex justify-center items-center',
+                ' hover:bg-red-500 hover:underline hover:underline-offset-4',
+                'landscape:w-32 landscape:text-base'
               )}
             >
               Nivelación
-            </li>
-            <li
-              className={clsx(
-                ' text-sm h-full w-24 p-2 flex justify-center items-center',
-                ' hover:bg-red-500'
-              )}
-            >
-              Poligonales
             </li>
           </ul>
         </div>
